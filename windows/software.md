@@ -19,9 +19,9 @@ This document describes the installation and configuration of software useful fo
 - [CFF Explorer][cff]
 - [Resource Hacker][rhack]
 - [Sysinternals Suite][sysinternals]
-- [Dependency Walker][depwalk] (32-bit and 64-bit)
+- [Dependency Walker][depwalk]
 - [Wireshark][wireshark]
-- [KeePass 2][keepass] (compile from source)
+- [KeePass 2][keepass]
 - [MPV][mpv]
 - [Gimp][gimp]
 - [Inkscape][inkscape]

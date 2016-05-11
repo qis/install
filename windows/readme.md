@@ -133,31 +133,10 @@ Task Scheduler Library
 ```
 
 ## Cortana
-Disable online search results.
+Disable *Cortana*.
 
-```
-Search the web and Windows (right to the start button)
-+ Settings (Cog)
-  Cortana...: Off
-  Search online and include web results: Off
-```
-
-Disable cortana data gathering (if cortana was enabled).
-
-```
-Settings
-+ Privacy
-  + Speech, inking, & typing
-    [Stop getting to know me]
-```
-
-Disable the search field.
-
-```
-Task Bar Context Menu
-+ Search
-  Hidden
-```
+1. Click on the Cortana icon in the task bar, select the cog icon and disable all options.
+2. Right click the task bar and select `Search / Hidden`.
 
 ## Lock Screen
 Disable the lock screen so that the password input field is always visible.

@@ -1,7 +1,6 @@
 ﻿# Windows
-Install *Windows 10*. Disable all optional settings on the first boot.
-
-This document describes the configuration of Windows 10 after activating and updating it.
+Install *Windows 10*. Disable all optional settings. It is a good idea to chose a single word username
+and rename the user later to have a `%UserProfile%` path and MSYS2 username without spaces.
 
 All command prompt scripts must be executed with Administrator privileges unless stated otherwise.
 

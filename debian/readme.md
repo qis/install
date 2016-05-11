@@ -97,7 +97,7 @@ scp -r .vim .vimrc .zsh .zshrc .tmux.conf qis@debian:
 
 
 ## CMake
-<https://cmake.org/download/>
+<https://cmake.org/download>
 
 Install an up to date *CMake* version.
 
@@ -111,7 +111,7 @@ NOTE: Add `/opt/cmake/bin` to the `PATH` environment variable.
 
 
 ## LLVM
-<http://llvm.org/apt/>
+<http://llvm.org/apt>
 
 Install *LLVM* and *Clang*.
 
@@ -136,6 +136,7 @@ sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/c
 
 ## GCC
 <https://gcc.gnu.org/wiki/InstallingGCC>
+
 Install *GCC*.
 
 ```sh

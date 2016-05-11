@@ -7,6 +7,7 @@ All command prompt scripts must be executed with Administrator privileges unless
 
 ## Windows Updates
 Disable automatic updates (optional).
+
 ```
 gpedit.msc
 + Computer Configuration
@@ -24,6 +25,7 @@ gpedit.msc
 ```
 
 Verify the updates settings.
+
 ```
 Settings
 + Update & security
@@ -33,6 +35,7 @@ Settings
 ```
 
 Disable P2P updates.
+
 ```
 Settings
 + Update & security
@@ -41,9 +44,11 @@ Settings
       + Choose how updates are delivered
         Updates from more than one place: PCs on my local network
 ```
+
 NOTE: This setting is not available after automatic updates are disabled.
 
 Get updates for other Microsoft products.
+
 ```
 Settings
 + Update & security
@@ -55,6 +60,7 @@ Settings
 
 ## Windows Defender
 Disable the Windows Defender cloud-based protection and sample submission.
+
 ```
 Settings
 + Update & security
@@ -65,6 +71,7 @@ Settings
 ```
 
 Disable the Windows Defender real-time protection.
+
 ```
 gpedit.msc
 + Computer Configuration
@@ -79,6 +86,7 @@ gpedit.msc
 
 ## Wi-Fi
 Disable Wi-Fi Sense.
+
 ```
 Settings
 + Network & Internet
@@ -91,6 +99,7 @@ To prevent others from sharing the password, the SSID must end with "_output".
 
 
 ## Telemetry
+
 ```cmd
 sc delete DiagTrack
 sc delete dmwappushservice
@@ -112,6 +121,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\D
 ```
 
 Disable the Application Experience tasks.
+
 ```
 Task Scheduler
 Task Scheduler Library
@@ -124,6 +134,7 @@ Task Scheduler Library
 
 ## Cortana
 Disable online search results.
+
 ```
 Search the web and Windows (right to the start button)
 + Settings (Cog)
@@ -132,6 +143,7 @@ Search the web and Windows (right to the start button)
 ```
 
 Disable cortana data gathering (if cortana was enabled).
+
 ```
 Settings
 + Privacy
@@ -140,6 +152,7 @@ Settings
 ```
 
 Disable the search field.
+
 ```
 Task Bar Context Menu
 + Search
@@ -148,6 +161,7 @@ Task Bar Context Menu
 
 ## Lock Screen
 Disable the lock screen so that the password input field is always visible.
+
 ```
 gpedit.msc
 + Computer Configuration
@@ -159,6 +173,7 @@ gpedit.msc
 
 ## OneDrive
 Uninstall OneDrive.
+
 ```cmd
 taskkill /f /im OneDrive.exe
 %SYSTEMROOT%\SysWOW64\OneDriveSetup.exe /uninstall
@@ -176,6 +191,7 @@ shutdown -r -t 0
 ```
 
 Execute the following in a user command prompt.
+
 ```cmd
 rd "%USERPROFILE%\OneDrive" /Q /S
 ```
@@ -183,6 +199,7 @@ rd "%USERPROFILE%\OneDrive" /Q /S
 
 ## Photos
 Disable automatic photo enhancements and linked duplicates.
+
 ```
 Photos
 + Settings
@@ -227,6 +244,7 @@ Change the Echo Request rules to accept public connections.
 
 ## Services
 Disable unwanted services.
+
 ```
 services.msc
 Certificate Propagation: Disabled
@@ -239,12 +257,13 @@ Offline Files: Disabled
 Superfetch: Disabled (When no HDD is installed.)
 Touch Keyboard and Handwriting Panel Service: Disabled
 Windows Biometric Service: Disabled
-Xbox Live *: Disabled
+Xbox Live \*: Disabled
 ```
 
 
 ## Startup
 Disable graphical boot.
+
 ```
 msconfig
 + Boot
@@ -263,6 +282,7 @@ Control Panel
 
 ## Skype
 Disable ads after installing Skype.
+
 ```
 Control Panel
 + Internet Options

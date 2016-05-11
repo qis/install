@@ -214,7 +214,7 @@ Disable everything not absolutely necessary in `Settings / Privacy`.
 
 
 ## Settings
-Use common sense in `Settings` and the `Control Panel`…
+Use common sense in `Settings` and the `Control Panel`.
 
 
 ## OneNote

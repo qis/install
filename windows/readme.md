@@ -233,9 +233,9 @@ To disable Help & Support (e.g. the F1 hotkey), rename the file `C:\Windows\Help
 
 ## Firewall
 Disable everything in `Windows Firewall with Advanced Security / Inbound Rules` except:
-- Core Networking - *
+- Core Networking - …
 - Delivery Optimization
-- File and Printer Sharing (Echo Request*)
+- File and Printer Sharing (Echo Request …)
 - Network Discovery (NB-Datagram-In)
 - Network Discovery (NB-Name-In)
 
@@ -251,13 +251,13 @@ Certificate Propagation: Disabled
 DataCollectionPublishingService: Disabled
 Downloaded Maps Manager: Disabled
 Geolocation Service: Disabled
-Hyper-V *: Disabled (Optional)
+Hyper-V …: Disabled (Optional)
 Microsoft (R) Diagnostics Hub Standard Collector Service: Disabled
 Offline Files: Disabled
 Superfetch: Disabled (When no HDD is installed.)
 Touch Keyboard and Handwriting Panel Service: Disabled
 Windows Biometric Service: Disabled
-Xbox Live \*: Disabled
+Xbox Live …: Disabled
 ```
 
 

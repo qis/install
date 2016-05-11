@@ -243,7 +243,7 @@ Change the Echo Request rules to accept public connections.
 
 
 ## Services
-Disable unwanted services.
+Disable unwanted services. Skip entries when required.
 
 ```
 services.msc
@@ -251,10 +251,9 @@ Certificate Propagation: Disabled
 DataCollectionPublishingService: Disabled
 Downloaded Maps Manager: Disabled
 Geolocation Service: Disabled
-Hyper-V …: Disabled (Optional)
 Microsoft (R) Diagnostics Hub Standard Collector Service: Disabled
 Offline Files: Disabled
-Superfetch: Disabled (When no HDD is installed.)
+Superfetch: Disabled
 Touch Keyboard and Handwriting Panel Service: Disabled
 Windows Biometric Service: Disabled
 Xbox Live …: Disabled

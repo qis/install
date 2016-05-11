@@ -293,7 +293,7 @@ del "%APPDATA%\Microsoft\Windows\Libraries\SavedPictures.library-ms" /S
 del "%APPDATA%\Microsoft\Windows\Libraries\CameraRoll.library-ms" /S
 ```
 
-NOTE: Deleting the libraries or setting `"ThisPCPolicy"="Hide"` is not a permanent solution.
+NOTE: Deleting the libraries or setting `"ThisPCPolicy"="Hide"` in the registry is not a permanent solution.
 
 
 ## Windows Mobile Device Center

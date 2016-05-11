@@ -96,6 +96,20 @@ scp -r .vim .vimrc .zsh .zshrc .tmux.conf qis@debian:
 ```
 
 
+## Fixed Network Interface Names
+When dealing with VMs it is a good idea to bind network interface names to the MAC address.
+
+Set `GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"` in `/etc/default/grub`.
+
+Create an udev configuration file `/etc/udev/rules.d/interfaces.rules`.
+
+```
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNEL=="eth*", ATTR{address}=="00:15:5d:01:02:01", NAME="eth0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNEL=="eth*", ATTR{address}=="00:15:5d:01:02:02", NAME="eth1"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNEL=="eth*", ATTR{address}=="00:15:5d:01:02:03", NAME="eth2"
+```
+
+
 ## CMake
 <https://cmake.org/download>
 

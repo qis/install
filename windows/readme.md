@@ -135,7 +135,7 @@ Task Scheduler Library
 ## Cortana
 Disable *Cortana*.
 
-1. Click on the Cortana icon in the task bar, select the cog icon and disable all options.
+1. Click on the *Cortana* icon in the task bar, select the cog icon and disable all options.
 2. Right click the task bar and select `Search / Hidden`.
 
 ## Lock Screen

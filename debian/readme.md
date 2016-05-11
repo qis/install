@@ -68,7 +68,7 @@ echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" | resolvconf -a eth0.inet  # On
 Add an administrator account at the bottom of the *sudoers* file before the `#includedir` directive.
 
 ```sh
-EDITOR=vim visudo
+EDITOR=vi visudo
 ```
 
 ```diff

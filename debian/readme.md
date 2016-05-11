@@ -105,8 +105,9 @@ Install an up to date *CMake* version.
 wget https://cmake.org/files/v3.5/cmake-3.5.2-Linux-x86_64.sh
 yes | sudo sh cmake-3.5.2-Linux-x86_64.sh --prefix=/opt
 sudo mv /opt/cmake-3.5.2-Linux-x86_64 /opt/cmake
-# NOTE: Add /opt/cmake/bin to the PATH environment variable.
 ```
+
+NOTE: Add `/opt/cmake/bin` to the `PATH` environment variable.
 
 
 ## LLVM
@@ -146,7 +147,8 @@ mkdir objdir && cd objdir
 ../gcc-6.1.0/configure --prefix=/opt/gcc --enable-languages=c,c++ --disable-multilib
 make
 sudo make install
-# NOTE: Add /opt/gcc/bin to the PATH environment variable.
 sudo update-alternatives --install /usr/bin/gcc gcc /opt/gcc/bin/gcc 50
 sudo update-alternatives --install /usr/bin/g++ g++ /opt/gcc/bin/g++ 50
 ```
+
+NOTE: Add `/opt/gcc/bin` to the `PATH` environment variable.

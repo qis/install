@@ -101,7 +101,7 @@ When dealing with VMs it is a good idea to bind network interface names to the M
 
 Set `GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"` in `/etc/default/grub`.
 
-Create an udev configuration file `/etc/udev/rules.d/interfaces.rules`.
+Create a configuration file `/etc/udev/rules.d/interfaces.rules`.
 
 ```
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNEL=="eth*", ATTR{address}=="00:15:5d:01:02:01", NAME="eth0"

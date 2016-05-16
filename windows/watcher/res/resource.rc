@@ -1,0 +1,42 @@
+#include <windows.h>
+#include "resource.h"
+#pragma code_page(65001)
+
+IDI_MAIN ICON "main.ico"
+IDI_GREY ICON "grey.ico"
+
+IDM_MAIN MENU
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "E&xit", IDM_EXIT
+  END
+END
+
+VS_VERSION_INFO VERSIONINFO
+  FILEVERSION     0, 1, 0, 1
+  PRODUCTVERSION  0, 1, 0
+  FILEOS          VOS_NT_WINDOWS32
+  FILETYPE        VFT_APP
+  FILESUBTYPE     VFT2_UNKNOWN
+  FILEFLAGSMASK   0
+  FILEFLAGS       0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "0409FDE9"
+    BEGIN
+      VALUE "CompanyName", COMPANY
+      VALUE "FileDescription", PROJECT
+      VALUE "FileVersion", "0.1.0 (Build 1)"
+      VALUE "LegalCopyright", "2016 Alexej Harm"
+      VALUE "OriginalFilename", "window.exe"
+      VALUE "ProductName", PRODUCT
+      VALUE "ProductVersion", "0.1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 0xFDE9
+  END
+END

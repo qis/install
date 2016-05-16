@@ -9,6 +9,7 @@ This document describes the installation and configuration of software useful fo
 - [Office 2013][office]
 - [SQL Server 2014][sql2014]
 - [Visual Studio 2015][vs2015]
+- [Visual Studio Line Endings Unifier][vsleu]
 - [VMWare vSphere][vsphere55]
 - [CMake][cmake]
 - [Nasm Assembler][nasm]
@@ -38,6 +39,7 @@ This document describes the installation and configuration of software useful fo
 [office]: https://www.office.com/backup
 [sql2014]: https://msdn.microsoft.com/en-us/subscriptions/downloads/#FileId=63715
 [vs2015]: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx
+[vsleu]: https://visualstudiogallery.msdn.microsoft.com/b2bbadd2-c337-43d7-9343-752ebbdd900f
 [vsphere55]: https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5
 [cmake]: http://www.cmake.org
 [nasm]: http://www.nasm.us

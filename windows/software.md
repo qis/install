@@ -101,8 +101,7 @@ Installation
   + Feature Selection
     [✓] SQL Server Replication
     [✓] Management Tools - Basic
-    [ ] Management Tools - Complete
-    [✓] SQL Client Connectivity SDK
+      [ ] Management Tools - Complete
   + Instance Configuration
     (•) Default instance
   + Database Engine Configuration

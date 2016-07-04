@@ -19,6 +19,7 @@ This document describes the installation and configuration of software useful fo
 - [HxD][hxd]
 - [Git][git]
 - [Git Large File Storage][gitlfs]
+- [Pandoc][pandoc]
 - [CFF Explorer][cff]
 - [Resource Hacker][rhack]
 - [Sysinternals Suite][sysinternals]
@@ -51,6 +52,7 @@ This document describes the installation and configuration of software useful fo
 [hxd]: http://mh-nexus.de/en/hxd
 [git]: https://git-scm.com
 [gitlfs]: https://git-lfs.github.com
+[pandoc]: http://pandoc.org
 [cff]: http://www.ntcore.com/exsuite.php
 [rhack]: http://www.angusj.com/resourcehacker
 [sysinternals]: https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx

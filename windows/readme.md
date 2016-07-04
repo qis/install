@@ -293,6 +293,15 @@ del "%APPDATA%\Microsoft\Windows\Libraries\CameraRoll.library-ms" /S
 NOTE: Deleting the libraries or setting `"ThisPCPolicy"="Hide"` in the registry is not a permanent solution.
 
 
+## Game DVR.
+Disable Windows Game DVR.
+
+```
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "AppCaptureEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "GameDVR_Enabled" /t REG_DWORD /d 0 /f
+```
+
+
 ## Windows Mobile Device Center
 Connect a Windows CE device and let the OS finish the WMDC installation.
 

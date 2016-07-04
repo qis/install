@@ -160,7 +160,7 @@ void window::on_tray(UINT id)
 
     // Terminate the process if necessary.
     auto name = path.filename();
-    if (name == "VsHub.exe" || name == "vctip.exe") {
+    if (name == "VsHub.exe" || name == "vctip.exe" || name == "PerfWatson2.exe") {
       process.terminate(0, ec);
     }
   }

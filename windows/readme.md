@@ -290,6 +290,14 @@ del "%APPDATA%\Microsoft\Windows\Libraries\SavedPictures.library-ms" /S
 del "%APPDATA%\Microsoft\Windows\Libraries\CameraRoll.library-ms" /S
 ```
 
+## Game DVR.
+Disable Windows Game DVR.
+
+```
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "AppCaptureEnabled" /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "GameDVR_Enabled" /t REG_DWORD /d 0 /f
+```
+
 NOTE: Deleting the libraries or setting `"ThisPCPolicy"="Hide"` in the registry is not a permanent solution.
 
 

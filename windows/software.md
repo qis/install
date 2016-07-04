@@ -93,19 +93,37 @@ Install the english version of Microsoft Office 2013 from <https://www.office.co
 ## SQL Server
 Install *SQL Server 2014*.
 
+```cmd
+netsh advfirewall set currentprofile settings unicastresponsetomulticast enable
+netsh advfirewall firewall add rule name="HTTP" dir=in action=allow protocol=TCP localport=80
+netsh advfirewall firewall add rule name="HTTPS" dir=in action=allow protocol=TCP localport=443
+netsh advfirewall firewall add rule name="SQL Server" dir=in action=allow protocol=TCP localport=1433
+netsh advfirewall firewall add rule name="SQL Admin Connection" dir=in action=allow protocol=TCP localport=1434
+netsh advfirewall firewall add rule name="SQL Service Broker" dir=in action=allow protocol=TCP localport=4022
+netsh advfirewall firewall add rule name="SQL Debugger/RPC" dir=in action=allow protocol=TCP localport=135
+netsh advfirewall firewall add rule name="SQL Browser" dir=in action=allow protocol=TCP localport=2382
+rem netsh advfirewall firewall add rule name="Analysis Services" dir=in action=allow protocol=TCP localport=2383
+```
+
 ```
 Installation
 + New SQL Server stand-alone installation...
   + Setup Role
     (•) SQL Server Feature Installation
   + Feature Selection
-    [✓] SQL Server Replication
-    [✓] Management Tools - Basic
-      [ ] Management Tools - Complete
+    + Instance Features
+      + Database Engine Services
+        [✓] SQL Server Replication
+        [✓] Full-Text and Semantic Extractions for Search
+    + Shared Features
+      [✓] Management Tools - Basic
+        [ ] Management Tools - Complete
   + Instance Configuration
     (•) Default instance
   + Database Engine Configuration
-    (•) Windows authentication mode
+    (•) Mixed Mode (SQL Server authentication and Windows authentication)
+    Enter Password: ...
+    Confirm Password: ...
     [Add Current User]
 ```
 
@@ -137,8 +155,7 @@ pacman -S \
   tftp-hpa \
   tree \
   vim \
-  wget \
-  zsh
+  wget
 ```
 
 Install optional packages.

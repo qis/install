@@ -157,8 +157,9 @@ mkdir objdir && cd objdir
 ../gcc-6.1.0/configure --prefix=/opt/gcc --enable-languages=c,c++ --disable-multilib
 make
 sudo make install
-sudo update-alternatives --install /usr/bin/gcc gcc /opt/gcc/bin/gcc 50
-sudo update-alternatives --install /usr/bin/g++ g++ /opt/gcc/bin/g++ 50
+for i in gcc g++ c++ cpp gcc-ar gcc-nm gcc-ranlib; do
+  sudo update-alternatives --install /usr/bin/$i $i /opt/gcc/bin/$i 50
+done
 ```
 
-NOTE: Add `/opt/gcc/bin` to the `PATH` environment variable.
+NOTE: It might be a good idea to add `/opt/gcc/bin` to the `PATH` environment variable.

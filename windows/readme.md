@@ -209,6 +209,13 @@ Task Manager
 ## Help & Support
 To disable Help & Support (e.g. the F1 hotkey), rename the file `C:\Windows\HelpPane.exe`.
 
+```cmd
+taskkill /f /im HelpPane.exe
+takeown /a /f "C:\Windows\HelpPane.exe"
+icacls "C:\Windows\HelpPane.exe" /grant %username%:F
+move "C:\Windows\HelpPane.exe" "C:\Windows\HelpPane.exe.bak"
+```
+
 
 ## Firewall
 Disable everything in `Windows Firewall with Advanced Security / Inbound Rules` except:

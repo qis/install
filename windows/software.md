@@ -35,6 +35,7 @@ This document describes the installation and configuration of software useful fo
 - [OBS Studio][obs]
 - [MSYS2][msys2]
 - [ImageUSB][imageusb]
+- [Emscripten][emsdk]
 
 [7-zip]: http://www.7-zip.org
 [chrome]: https://www.google.com/chrome
@@ -68,6 +69,7 @@ This document describes the installation and configuration of software useful fo
 [obs]: https://obsproject.com
 [msys2]: https://msys2.github.io
 [imageusb]: http://www.osforensics.com/tools/write-usb-images.html
+[emsdk]: https://github.com/qis/wasm
 
 
 ## Fonts
@@ -137,24 +139,22 @@ Among many other things, *Resource Hacker* application can be used to change the
 ## MSYS2
 Install *MSYS2* to `C:\MSYS2`. Follow the instructions on <https://msys2.github.io> to update the software.
 
+Create a shortcut to prevent a `cmd` window from showing on startup.
+
+```cmd
+C:\msys64\usr\bin\mintty.exe C:\msys64\usr\bin\bash.exe --login
+```
+
 Install commonly used packages.
 
 ```
 pacman -S \
   cloc \
   diffutils \
-  git \
   gnu-netcat \
-  irssi \
-  lftp \
-  make \
   openssh \
-  p7zip \
-  perl \
-  python2 \
   subversion \
   tar \
-  tftp-hpa \
   tree \
   vim \
   wget
@@ -164,6 +164,14 @@ Install optional packages.
 
 ```
 pacman -S \
+  git \
+  irssi \
+  lftp \
+  make \
+  p7zip \
+  perl \
+  python2 \
+  tftp-hpa \
   mingw-w64-x86_64-imagemagick \
   mingw-w64-x86_64-pngcrush
 ```
